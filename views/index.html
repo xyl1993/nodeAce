@@ -46,10 +46,10 @@
                 <div class="navbar-container" id="navbar-container">
                     <div class="navbar-header pull-left">
                         <a href="#" class="navbar-brand">
-                            <small>
-						<i class="icon-leaf"></i>
-						日志分析展示系统
-					</small>
+		                    <small>
+								<i class="icon-leaf"></i>
+								日志分析展示系统
+							</small>
                         </a>
                         <!-- /.brand -->
                     </div>
@@ -515,33 +515,33 @@
                     </div>
                     <div class="main-content">
                         <div class="breadcrumbs" id="breadcrumbs">
-                            <script type="text/javascript">
-                            try {
-                                ace.settings.check('breadcrumbs', 'fixed')
-                            } catch (e) {}
-                            </script>
-                            <ul class="breadcrumb">
-                                <li>
-                                    <i class="icon-home home-icon"></i>
-                                    <a href="#">首页</a>
-                                </li>
-                                <li class="active">控制台</li>
-                            </ul>
-                            <!-- .breadcrumb -->
-                            <div class="nav-search" id="nav-search">
-                                <form class="form-search">
-                                    <span class="input-icon">
-									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
-									<i class="icon-search nav-search-icon"></i>
-								</span>
-                                </form>
-                            </div>
-                            <!-- #nav-search -->
-                        </div>
-                        <div class="page-content" ui-view>
+							<script type="text/javascript">
+								try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+							</script>
 
-                         </div>
+							<ul class="breadcrumb">
+								<li>
+									<i class="icon-home home-icon"></i>
+									<a href="#">Home</a>
+								</li>
+
+								<li>
+									<a href="#">More Pages</a>
+								</li>
+								<li class="active">Inbox</li>
+							</ul><!-- .breadcrumb -->
+
+							<div class="nav-search" id="nav-search">
+								<form class="form-search">
+									<span class="input-icon">
+										<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+										<i class="icon-search nav-search-icon"></i>
+									</span>
+								</form>
+							</div><!-- #nav-search -->
+						</div>
                         <!-- /.page-content -->
+                        <div class="page-content" ui-view> </div>
                     </div>
                     <!-- /.main-content -->
                 </div>
