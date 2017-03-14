@@ -11,5 +11,8 @@ router.get('/main', function(req, res, next) {
 router.get('/gallery', function(req, res, next) {
 	res.render('main/gallery.html')
 });
+router.get('/typography', function(req, res, next) {
+	res.render('main/typography.html')
+});
 
 module.exports = router;

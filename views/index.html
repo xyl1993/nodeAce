@@ -278,14 +278,14 @@
                     </a>
                     <div class="sidebar" id="sidebar">
                         <ul class="nav nav-list">
-                            <li class="active">
-                                <a href="index.html">
+                            <li data-name="main">
+                                <a ui-sref="main">
                                     <i class="icon-dashboard"></i>
                                     <span class="menu-text"> 控制台 </span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="typography.html">
+                            <li data-name="typography">
+                                <a ui-sref="typography">
                                     <i class="icon-text-width"></i>
                                     <span class="menu-text"> 文字排版 </span>
                                 </a>
@@ -420,7 +420,7 @@
                                     </span>
                                 </a>
                             </li>
-                            <li>
+                            <li data-name="gallery">
                                 <a ui-sref="gallery">
                                     <i class="icon-picture"></i>
                                     <span class="menu-text" > 相册 </span>
@@ -522,13 +522,9 @@
 							<ul class="breadcrumb">
 								<li>
 									<i class="icon-home home-icon"></i>
-									<a href="#">Home</a>
+									<a ui-sref="main">Home</a>
 								</li>
-
-								<li>
-									<a href="#">More Pages</a>
-								</li>
-								<li class="active">Inbox</li>
+								<li class="active" ng-if="menuTitle!=''" ng-bind="menuTitle"></li>
 							</ul><!-- .breadcrumb -->
 
 							<div class="nav-search" id="nav-search">
@@ -541,7 +537,11 @@
 							</div><!-- #nav-search -->
 						</div>
                         <!-- /.page-content -->
-                        <div class="page-content" ui-view> </div>
+                        <div class="page-content" ui-view>
+
+
+
+                        </div>
                     </div>
                     <!-- /.main-content -->
                 </div>
